@@ -1,0 +1,6 @@
+.yarn/
+src/
+public/
+tsconfig.json
+.vscode/
+.next/

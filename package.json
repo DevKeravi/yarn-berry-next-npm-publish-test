@@ -1,11 +1,17 @@
 {
   "name": "keravi-npm-test",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.3.0",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "./browser/specific/main.js",
+  "description": "keravi test publish",
+  "author": "keravi",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "pub": "rm -rf dist && mkdir dist && tsc",
     "lint": "next lint"
   },
   "dependencies": {
@@ -19,5 +25,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
-  }
+  },
+  "packageManager": "yarn@3.4.1"
 }
